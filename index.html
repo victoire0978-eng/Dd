@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <title>DAKIS AI - L'IA de ISMAEL & DAKIS</title>
+    <meta name="description" content="L'IA mobile PWA de ISMAEL & DAKIS avec mémoire sécurisée et intelligence Gemini." />
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#090d16" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="DAKIS AI" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" type="image/svg+xml" href="/icon-192.svg" />
+    <link rel="apple-touch-icon" href="/icon-192.svg" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="DAKIS AI - L'IA de ISMAEL & DAKIS" />
+    <meta property="og:description" content="L'IA officielle de ISMAEL & DAKIS." />
+    <meta property="og:type" content="website" />
+  </head>
+  <body class="bg-[#090d16] text-zinc-100 antialiased selection:bg-rose-500/30 selection:text-rose-200 overflow-x-hidden min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(err => {
+            console.log('SW registration error:', err);
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    color-scheme: dark;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #050505;
+  }
+}
+
+/* Frosted glass custom scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+  backdrop-filter: blur(8px);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* Markdown styling with frosted glass aesthetics */
+.markdown-body pre {
+  padding: 0.75rem 1rem;
+  border-radius: 0.875rem;
+  overflow-x: auto;
+  margin: 0.5rem 0;
+  font-size: 0.825rem;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.markdown-body ul {
+  list-style-type: disc;
+  margin-left: 1.25rem;
+}
+
+.markdown-body ol {
+  list-style-type: decimal;
+  margin-left: 1.25rem;
+}
+
+.markdown-body blockquote {
+  border-left: 2px solid rgba(249, 115, 22, 0.6);
+  padding-left: 0.75rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.02);
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+

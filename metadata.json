@@ -1,0 +1,6 @@
+{
+  "name": "DAKIS AI",
+  "description": "L'IA mobile PWA de ISMAEL & DAKIS avec mémoire sécurisée et intelligence Gemini.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
